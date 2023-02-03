@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 700px;
+    background-image: url("sekiller/d1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.topbar{
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffd799;
+}
+.topbar-container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.icons{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0;
+    background-color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    color: #575f65;
+}
+nav{
+    width: 85%;
+    margin: auto;
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+nav .logo{
+    width: 140px;
+    height: 75px;
+}
+nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav ul{
+    width: 60%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+nav ul li a{
+    color: #575f65;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+} 
+nav ul li:last-child i:first-child{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background-color: rgba(255,255,255,0.7); 
+text-align: center;
+font-size: 12px;
+line-height: 30px;
+color: #575f65;
+transform: rotate(90deg);
+}
+nav ul li:last-child i:last-child{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: rgb(3, 170, 3);
+    text-align: center;
+    font-size: 12px;
+    color: white
+}
+.main{
+    width: 85%;
+    margin: auto;
+    height: 300px;
+    padding-top: 50px;
+    text-align:center;
+}
+.main h2{
+    width: 40%;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.main p{
+    width: 40%;
+    font-weight: 500;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+.btn{
+    width: 160px;
+    height: 50px;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+.click button:first-child{
+    background-color:#ae4c51; 
+}
+.click button:last-child{
+    background-color: #408858;
+    position: relative;
+    z-index: 1;
+}
+.click button:last-child::after{
+    content:"" ;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #ae4c51;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.click button:last-child:hover::after{
+    transform: scaleY(1);
+    transition: 0.5s;
+}
+.eco{
+    width: 100%;
+    height: 500px;
+    background-image: url(	http://ecoharvest.farm/img/bg/about.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.eco img{
+    width: 40%;
+    height: 100px;
+    text-align: center;
+}
+.img img{
+    width: 90%;
+    height: 90%;
+    padding-left: 60px;
+}
+.text{
+    text-align: center;
+    margin: auto;
+    width: 42%;
+    height: 66%;
+    padding: 60px 50px;
+}
+.text h6{
+    width: 55%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Rubik', sans-serif; 
+    margin-bottom: 30px; 
+    color: #112433;
+    font-weight: 100;
+}
+.text p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 25px;
+    color: #575f65;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+button{
+    width: 120px;
+    height: 40px;
+    background-color: #408858;
+    color: white;
+    font-size: 12px;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #ae4c51;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+button:hover::after{
+    transform: scaleY(1);
+    transition: 1s;
+}
+.our{
+    width: 100%;
+    height: 550px;
+    /* background-color: red; */
+    position: relative;
+    text-align: center;  
+}
+.our h2{
+    padding-top: 60px;
+    font-size: 50px;
+    font-family: sans-serif;
+    padding-bottom: 30px;
+}
+.list ul{
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+}
+.list ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-left: 1px solid gray;
+}
+.list ul li:first-child{
+    border-left: none;
+    position: relative;
+}
+.list ul li:first-child::after{
+    content: url(http://ecoharvest.farm/img/shape/1.png );
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 33px;
+}
+.green{
+    color: #408858 !important;
+}
+.list ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: darkgrey;
+}
+.meyve{
+    width: 80%;
+    margin:85px auto 10px auto;
+    height: 270px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.may{
+    width: 23%;
+    height: 250px;
+    /* background-color: green; */
+}
+.draw{
+    width: 100%;
+    height: 80%;
+    border: 1px solid grey;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(64,136,88,0.8);
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+.overlay i{
+    text-align: center;
+    margin-top: 80px;
+    color: #408858;
+    font-size: 10px;
+    background-color: aliceblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+}
+.overlay i:hover{
+    background-color: #ae4c51;
+    color: white;
+}
+.draw:hover .overlay{
+    opacity: 1;
+}
+.draw img{
+    width: 100%;
+    height: 100%;
+}
+.may span{
+    display: block;
+    padding-top: 17px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+.may span:hover{
+    color: #ffd799;
+}
+.fon img{
+    position: absolute;    
+}
+.fon img:first-child{
+    top: 0;
+    left: 0;
+}
+.fon img:nth-child(2){
+    right: 10px;
+    top: 0;
+}
+.fon img:nth-child(4){
+    left: 10px;
+    bottom: 15px;
+}
+.fon img:nth-child(3){
+    right: 10px;
+    bottom: 15px;
+}
+.fon img:nth-child(5){
+    right: 500px;
+}
+.first{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin-top: 65px;
+    position: relative;
+    justify-content: center;
+}
+.secret{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.secret img{
+    width: 80%;
+}
+.first .image{
+    width: 50%;
+    height: 400px;
+    
+}
+.first .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.first .menu{
+    width: 50%;
+    text-align: center;
+}
+.menu h2{
+    font-size: 35px;
+    font-weight: 100;
+    line-height: 50px;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.menu p{
+    width: 80%;
+    margin: auto;
+    font-size: 13px;
+    line-height: 26px;
+    font-family: 'Rubik', sans-serif;
+    color: #575f65;
+}
+.list-2 .list-text ul{
+    list-style: none;
+    color: #575f65;
+    font-family: sans-serif;
+}
+.list-2 .list-text ul li{
+    width: 80%;
+    font-size: 12px;
+    display: flex;
+    margin-bottom: 15px;
+}
+.list-2 .list-text ul li p{
+    font-size: 12px;
+}
+
+.last{
+    width: 100%;
+    height: 300px;
+    background-image: url(http://ecoharvest.farm/img/bg/bg3.jpg);
+    background-position: cover;
+    
+}
+.last h3{
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.last-number{
+    width: 85%;
+    margin: auto;
+}
+.last-number ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+  
+}
+.last ul li{
+    text-align: center;
+    font-size:70px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+.last ul h5{
+    font-size: 20px;
+    font-weight: 100;
+
+}
+footer{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.foot .child{
+    background-image: url(http://ecoharvest.farm/img/bg/bg5.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 180px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 105px;
+    top: 60px;
+    z-index: 1;
+    
+}
+.foot .child img{
+    width: 170px;
+    height: 170px;
+}
+
+.foot .child img:first-child{
+    width: 70px;
+    height: 70px;
+}
+.foot .child img:nth-child(2){
+    width: 70px;
+    height: 70px;
+}
+
+.non{
+    width: 100%;
+    height: 200px;
+}
+.non-container{
+    width: 80%;
+    height: 220px;
+    background-image: url("http://ecoharvest.farm/img/bg/bg5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    top: 110px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.non-container img{
+    width: 110px;
+    height: 110px;
+}
+
+footer{
+    background-image: url(	http://ecoharvest.farm/img/bg/bg6.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.footer-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid rgb(3, 105, 3);
+    /* margin-top: 80px; */
+    justify-content: space-between;
+}
+.footer-col{
+    width: 23%;
+    height: 200px;
+    margin-top: 150px;
+    text-align: center;
+}
+.foot-logo{
+    width: 85%;
+}
+.foot-icons{
+    width: 85%;
+    margin-top: 30px;
+}
+.foot-icons i{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    color: white;
+    background-color: #056325;
+   
+}
+.footer-col span{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+}
+.foot{
+    width: 40px;
+    height: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+.footer-col a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+    font-size: 16px;
+    font-family:'Rubik', sans-serif; 
+}
+.footer-col ul{
+    list-style: none;
+    line-height: 25px;
+    color: white;
+    font-size: 16px;
+}
+footer p{
+    margin-top:15px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    color: #474e53;
+
+}
