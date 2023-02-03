@@ -211,7 +211,6 @@ button:hover::after{
 .our{
     width: 100%;
     height: 550px;
-    /* background-color: red; */
     position: relative;
     text-align: center;  
 }
@@ -227,7 +226,6 @@ button:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
 }
 .list ul li{
     list-style: none;
@@ -258,14 +256,12 @@ button:hover::after{
     width: 80%;
     margin:85px auto 10px auto;
     height: 270px;
-    /* background-color: blue; */
     display: flex;
     justify-content: space-between;
 }
 .may{
     width: 23%;
     height: 250px;
-    /* background-color: green; */
 }
 .draw{
     width: 100%;
